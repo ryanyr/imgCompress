@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="jquery.min.js"></script>
+    <script src="imgCompress.js"></script>
+</head>
+
+<body>
+    <input type="file" id="inputs" accept="" /> //multiple(多文件上传)
+    <div id='dd'></div>
+    <script>
+        //读取图片    
+        $(document).ready(function () {
+            $("#inputs").change(function () {
+                var fil = this.files;
+                for (var i = 0; i < fil.length; i++) {
+                    console.log(fil[i]);
+                    reads(fil[i]);
+                }
+            });
+        });
+
+        
+
+        //压缩
+    </script>
+</body>
+<html>
